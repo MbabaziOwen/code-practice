@@ -14,16 +14,16 @@ int main(){
     std::cin>>first_value;
     std::cin>>second_value;
 
-    std::cout<<"enter operand A for addition , D for division or S for subtruction ";
+    std::cout<<"enter operand + for addition , / for division or - for subtruction and * for multiplication ";
     std::cin>>operators;
 
     switch(operators){
-        case 'a': //addition
+        case '+': //addition
         answer = first_value+second_value;
         std::cout<<"the addition of the values is "<< answer;
         break;
 
-        case 'd': //division
+        case '/': //division
         if(second_value==0){
             std::cout<<"you can not divide by zero ";
             break;
@@ -34,12 +34,12 @@ int main(){
         }
         
 
-        case 's': //subtraction
+        case '-': //subtraction
         answer = first_value-second_value;
         std::cout<<"the subtraction of the values is "<< answer;
         break;
 
-        case 'm': //multiplication
+        case '*': //multiplication
         answer = first_value*second_value;
         std::cout<<"the multiplication of the values is "<< answer;
         break;
@@ -54,4 +54,4 @@ int main(){
 
 
     return 0;
-}
+}       
