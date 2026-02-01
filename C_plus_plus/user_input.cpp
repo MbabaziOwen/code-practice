@@ -7,7 +7,7 @@ int main(){
     //asking user for their name 
     std::string name;
     std::cout<<"what is your name: ";
-    std::getline(std::cin,name);
+    std::getline(std::cin>> std::ws,name);  //ws removes any whitespaces that can be left in the input 
 
    
       
