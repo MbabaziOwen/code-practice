@@ -23,8 +23,9 @@ int main(){
     //name.append("@gmail.com");
     //std::cout<<"you username is now "<<name;
 
-    std::cout<<name.at(0);
-    
+    //std::cout<<name.at(0); //return the character at that index
+
+     
 
     return 0;
 }
