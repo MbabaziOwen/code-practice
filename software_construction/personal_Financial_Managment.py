@@ -32,4 +32,28 @@ initial_money = get_positive_price("Enter your initial amount of money: ")
 print("\n--- User Information ---")
 print(f"Name: {name}")
 print(f"Class: {class_name}")
-print(f"Initial Money: ${initial_money:.2f}")
+print(f"Initial Money: ${initial_money:.2f}\n")
+
+print("--- Enter 5 Expenses ---")
+
+current_balance = initial_money
+
+# Ask for 5 expenses and subtract each one
+for i in range(1, 6):
+    print(f"\nExpense :{i}")
+    print(f"Current balance: UGX: {current_balance:.2f}")
+    
+    expense_Name = input("enter the name of the expense: ")
+    expense = get_positive_price("Enter expense amount: ")
+
+    
+    # Check if expense is greater than current balance
+    if expense > current_balance:
+        print("Warning: This expense exceeds your current balance!")
+    
+    current_balance -= expense
+    print("==New Iteam== ", expense_Name)
+    print(f"Remaining balance: ${current_balance:.2f}")
+  
+
+#ask user to enter 5 inputs(expenes and for each expense, subtract its cost from the initial price while reculaculting the initial price every after an input )
