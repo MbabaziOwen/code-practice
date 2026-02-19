@@ -54,6 +54,10 @@ for i in range(1, 6):
     current_balance -= expense
     print("==New Iteam== ", expense_Name)
     print(f"Remaining balance: ${current_balance:.2f}")
+
+
+    #DISPLAYING AN EXPENSS SAMARY
+    
   
 
 #ask user to enter 5 inputs(expenes and for each expense, subtract its cost from the initial price while reculaculting the initial price every after an input )
