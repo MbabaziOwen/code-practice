@@ -5,7 +5,7 @@
 # The final output will be a comprehensive summary of the user's financial activity.
 
 def get_positive_price(firstPrice):
-    #get a non-negative float from user
+    #get a non-negative digit from user
     while True:
         try:
             value = float(input(firstPrice))
@@ -14,34 +14,37 @@ def get_positive_price(firstPrice):
             else:
                 return value
         except ValueError:
-            print("Invalid input. Please enter a valid number ")
+            print("Please enter a valid number ")
 
 
-print("Enter your details:")
+print("Enter your details for your weekly Budget:")
 
 # Get user's name
 name = input("Enter your name: ")
 
 # Get user's class
-class_name = input("Enter your class: ")
+budget_name = input("Budget name: ")
 
 # Get initial amount of money 
-initial_money = get_positive_price("Enter your initial amount of money: ")
+initial_money = get_positive_price(f"Enter your initial amount of money for :{budget_name}: ")
+
+#how many iteams user has to enter
+
 
 # Display initial information
 print("\n--- User Information ---")
 print(f"Name: {name}")
-print(f"Class: {class_name}")
-print(f"Initial Money: ${initial_money:.2f}\n")
+print(f"Class: {budget_name}")
+print(f"Initial Money: UGX{initial_money:.0f}\n")
 
-print("--- Enter 5 Expenses ---")
+print(f"--- Enter  {budget_name} Expenses ---")
 
 current_balance = initial_money
 
 # Ask for 5 expenses and subtract each one
 for i in range(1, 6):
     print(f"\nExpense :{i}")
-    print(f"Current balance: UGX: {current_balance:.2f}")
+    print(f"Current balance: UGX: {current_balance:.0f}")
     
     expense_Name = input("enter the name of the expense: ")
     expense = get_positive_price("Enter expense amount: ")
@@ -53,11 +56,11 @@ for i in range(1, 6):
     
     current_balance -= expense
     print("==New Iteam== ", expense_Name)
-    print(f"Remaining balance: ${current_balance:.2f}")
+    print(f"Remaining balance: UGX{current_balance:.2f}")
 
 
     #DISPLAYING AN EXPENSS SAMARY
-    
+
   
 
 #ask user to enter 5 inputs(expenes and for each expense, subtract its cost from the initial price while reculaculting the initial price every after an input )
