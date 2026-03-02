@@ -6,12 +6,12 @@ class Car:
         self.model = model
         self.year= year
         self.color = color
-         
+        
     def drive(self):
-        print("this car is driving\n")
+        print("this "+self.model +" is driving\n")
 
     def stop(self):
-          print("this car has stopped\n")
+        print("this car has stopped\n")
 
 
 
