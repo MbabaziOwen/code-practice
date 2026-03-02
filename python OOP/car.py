@@ -11,7 +11,7 @@ class Car:
         print("this "+self.model +" is driving\n")
 
     def stop(self):
-        print("this car has stopped\n")
+        print("this "+self.model+" has stopped\n")
 
 
 

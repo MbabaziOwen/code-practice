@@ -1,7 +1,7 @@
 from car import Car
 
 car_1 = Car("Chevy","Corvette",2021,"blue")
-car_2 = Car("Benz","tech",1990,"red")
+car_2 = Car("Benz","bluetech",1990,"red")
 
 print(car_1.make)
 print(car_1.color)
