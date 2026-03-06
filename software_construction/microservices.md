@@ -4,7 +4,7 @@
 
 ## Netflix — The Pioneer of Microservices at Scale
 
-Netflix serves **260+ million subscribers** across **190+ countries** and generates approximately **15% of global internet traffic**. Managing this scale is only possible because of a fundamental architectural shift made in 2008.
+
 
 ### Why Netflix Moved to Microservices
 
