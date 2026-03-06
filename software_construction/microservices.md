@@ -1,4 +1,4 @@
-# Microservices Architecture: Industry Adoption, Success, and the Return to Monoliths
+# Microservices Architecture:  and the Return to Monoliths
 
 ---
 
