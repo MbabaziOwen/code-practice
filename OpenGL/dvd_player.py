@@ -2,12 +2,13 @@
 import pygame
 
 pygame.init()
-window = pygame.display.set_mode((1000, 1000))
+window = pygame.display.set_mode((1000, 800))
 
 robot = pygame.image.load("C:\code-practice\code-practice\OpenGL\dvdplayerlogo.png")
+robot = pygame.transform.scale(robot, (256, 256))  # change 200, 100 to whatever size you want
 
-x = 0
-y = 0
+x = 50
+y = 50
 velocity = 1
 clock = pygame.time.Clock()
 
@@ -26,4 +27,4 @@ while True:
     if velocity < 0 and x <= 0:
         velocity = -velocity
 
-    clock.tick(60)
+    clock.tick(120)
