@@ -64,6 +64,4 @@ In a widely discussed 2023 technical post, Amazon's own **Prime Video** team rev
 
 ---
 
-## Key Takeaway
 
-> Microservices excel when systems are genuinely large, teams are numerous, and services have truly independent scaling needs — as Netflix and Spotify demonstrate. They become a liability when adopted prematurely or without clear domain boundaries, as Amazon Prime Video and Segment discovered. **Architecture should follow the problem, not the trend.**
