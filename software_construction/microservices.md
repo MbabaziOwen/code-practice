@@ -50,15 +50,14 @@ The architecture allowed Spotify to expand into podcasts, audiobooks, and live a
 
 ---
 
-## The Return to Monoliths — When Microservices Go Wrong
+## When companies returned to Monoliths 
 
-Microservices are not universally superior. Two well-known companies have publicly reversed course after discovering that operational overhead outweighed the benefits for their context.
 
 ### Amazon Prime Video (2023) — 90% Cost Reduction by Going Back
 
-In a widely discussed 2023 technical post, Amazon's own **Prime Video** team revealed it had migrated its **Video Quality Analysis (VQA)** system *away* from microservices back to a monolithic service. The original architecture was expensive: each video frame passed through multiple distributed services, generating high AWS Step Functions costs and orchestration complexity. Consolidating into a single process **reduced infrastructure costs by 90%** and significantly simplified the codebase. Amazon's own conclusion was that microservices introduce overhead only justified when scale and team structure genuinely require it.
+Amazon's own **Prime Video** team revealed it had migrated its **Video Quality Analysis (VQA)** system *away* from microservices back to a monolithic service. The original architecture was expensive: each video frame passed through multiple distributed services, generating high AWS Step Functions costs and orchestration complexity. Consolidating into a single process **reduced infrastructure costs by 90%** and significantly simplified the codebase. Amazon's own conclusion was that microservices introduce overhead only justified when scale and team structure genuinely require it.
 
-### Segment (2020) — Shared Libraries Became the New Monolith
+### Segment (2020) 
 
 **Segment**, a customer data platform, built microservices with shared libraries to provide common behaviour across hundreds of worker services. Over time, changes to any shared library required a week of developer effort and extensive testing across the entire service fleet. The architecture had become too costly to maintain. In 2020 Segment consolidated back into a **single monolithic service**, citing maintainability and developer productivity as the primary reasons. Their workload simply did not have the independent scaling requirements that justify microservices complexity.
 
